@@ -23,15 +23,6 @@ Mongoose.connect(URI)
   console.log("Server Error:",err)
 })
 
-// app.post("/menu", (req, res)=>{
-//   const {name, description, price} = req.body;
-//   if (!name || !description || !price){
-//     res.status(400).json({Error: "All fields are required."})
-//   }
-//   res.status(201).json({
-//     Message: "Menu created successfully !"
-//   })
-// })
 
 app.post("/menu", async (req, res)=>{
   try{
